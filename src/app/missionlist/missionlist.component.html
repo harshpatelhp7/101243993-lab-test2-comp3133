@@ -1,0 +1,34 @@
+<app-missiondetails
+  [mission]="mission"
+  *ngIf="loadDetails"
+></app-missiondetails>
+<div *ngIf="!loading">
+  <div *ngIf="loadList">
+    <h1>SpaceX Mission Launch List</h1>
+    <mat-list
+      *ngFor="let mission of missions"
+      class="list"
+      (click)="showDetails(mission)"
+    >
+      <mat-list-item class="list-item">
+        <img
+          src="{{ mission.links.mission_patch_small }}"
+          width="50"
+          height="50"
+        />
+        <div>
+          <h3>
+            {{ mission.mission_name }}
+          </h3>
+          <p>{{ mission.launch_year }}</p>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item class="list-item">
+        <p>{{ mission.details }}</p></mat-list-item
+      >
+    </mat-list>
+  </div>
+</div>
+
+<h1 *ngIf="loading">Loading...</h1>

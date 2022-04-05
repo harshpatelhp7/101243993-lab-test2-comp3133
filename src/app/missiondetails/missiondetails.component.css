@@ -1,0 +1,27 @@
+.detailsList {
+  padding: 150px 0 150px;
+  background-color: #dfd1d4;
+}
+
+mat-list {
+  background-color: #dfd1d4;
+}
+
+mat-list-item h1 {
+  color: palevioletred;
+}
+h1 {
+  font-size: 1.4vw;
+}
+p {
+  font-size: 0.9vw;
+}
+
+.firstContain {
+  display: flex;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+.list {
+  margin-top: 2vh;
+  background-color: rgb(192, 224, 252);
+  padding: 15px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.list:hover {
+  cursor: pointer;
+}
+
+.list-item {
+  margin-top: 3vh;
+}
+
+div {
+  margin-left: 1vw;
+}
