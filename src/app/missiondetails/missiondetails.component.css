@@ -3,6 +3,10 @@
   background-color: #dfd1d4;
 }
 
+.firstContain {
+  padding: 20px;
+}
+
 mat-list {
   background-color: #dfd1d4;
 }
